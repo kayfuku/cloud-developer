@@ -9,6 +9,7 @@ import { V0MODELS } from './controllers/v0/model.index';
 
 (async () => {
   await sequelize.addModels(V0MODELS);
+  // Check if our database is in sync with our models within sequelize.
   await sequelize.sync();
 
   const app = express();
