@@ -1,6 +1,8 @@
 'use strict';
+console.log(`migration 28`);
 module.exports = {
   up: (queryInterface, Sequelize) => {
+    console.log(`migration 28 up`);
     return queryInterface.createTable('User', {
       id: {
         allowNull: false,

@@ -1,6 +1,8 @@
 'use strict';
+console.log(`migration 25`);
 module.exports = {
   up: (queryInterface, Sequelize) => {
+    console.log(`migration 25 up`);
     return queryInterface.createTable('FeedItem', {
       id: {
         allowNull: false,
